@@ -30,6 +30,9 @@ const isArticle = computed(
       }"
     >
       <NotFoundPage v-if="page.isNotFound" />
+      <div v-else-if="isArticle" class="vp-doc">
+        <Content />
+      </div>
       <Content v-else />
     </main>
     <SiteFooter
