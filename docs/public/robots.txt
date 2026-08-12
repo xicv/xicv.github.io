@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xicv.github.io/sitemap.xml

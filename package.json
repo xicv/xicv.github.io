@@ -1,0 +1,30 @@
+{
+  "name": "xicv.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.21.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "lint": "eslint docs eslint.config.mjs",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json",
+    "check": "pnpm lint && pnpm typecheck && pnpm build"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "26.2.0",
+    "eslint": "10.8.1",
+    "eslint-plugin-vue": "10.10.0",
+    "globals": "17.10.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.67.0",
+    "vitepress": "1.6.4",
+    "vue": "3.5.41",
+    "vue-tsc": "3.3.9"
+  }
+}

@@ -1,0 +1,62 @@
+export const excludedRepositories = new Set([
+  'nvim-config',
+  'homebrew-tap',
+  'alfred-workflows',
+  'zed-config',
+  'claude-code-commands',
+])
+
+export const displayNames: Record<string, string> = {
+  'vibewaiting-site': 'VibeWaiting',
+  easplit: 'eaSplit',
+  minco: 'Minco',
+  'codex-agent-indicator': 'Codex Agent Indicator',
+  'recogniz.ing': 'Recogniz.ing',
+  'sequel-mcp': 'Sequel MCP',
+  'codex-chat': 'Codex Chat',
+  coco: 'coco',
+  'codexbar-hub': 'CodexBar Hub',
+  'agent-composer': 'Agent Composer',
+  gproj: 'gproj',
+  'browser-automation-skill': 'Browser Automation Skill',
+  'caffeinate-mcp': 'Caffeinate MCP',
+  textlog: 'textlog',
+  callout: 'Callout',
+  refine: 'Refine',
+  recognize: 'recognize',
+  projectask: 'Projectask',
+  saynippet: 'Saynippet',
+  olingo: 'Olingo',
+  watchdiff: 'WatchDiff',
+}
+
+export const descriptions: Record<string, string> = {
+  'vibewaiting-site': 'Quiet, interruptible things to do while you wait.',
+  easplit: 'A native macOS utility for arranging and reusing window layouts.',
+  minco: 'A contract-to-cloud Rust framework for low-idle-cost web applications.',
+  'codex-agent-indicator': 'Low-overhead Codex task status for Logitech G915 on macOS.',
+  'recogniz.ing': 'Local-first recording, live transcription, and human notes.',
+  'sequel-mcp': 'Policy-gated MySQL, MariaDB, and SQLite access for coding agents.',
+  'codex-chat': 'A safety-first Codex skill for browser-based engineering collaboration.',
+  coco: 'A strict referee for agentic coding: plan, implement, review, verify, human merge.',
+  'codexbar-hub': 'One statusline for Claude, Codex usage, and macOS keep-awake state.',
+  'agent-composer': 'Multi-agent orchestration that keeps the main coding session focused on intent.',
+  gproj: 'A persistent planning brain that separates direction, execution, and verification.',
+  'browser-automation-skill': 'A local-first skill that routes work across four browser automation tools.',
+  'caffeinate-mcp': 'Control macOS sleep from coding agents, with a live statusline.',
+  textlog: 'A macOS clipboard and OCR daemon with full-text history.',
+  callout: 'A text-to-speech plugin that speaks coding-agent responses with Kokoro TTS.',
+  refine: 'ASR-aware text refinement and pronunciation coaching for English learners.',
+  recognize: 'Fast, local speech recognition for macOS with whisper.cpp acceleration.',
+  projectask: 'A coding-agent skill that turns rough ideas into professional task files.',
+  saynippet: 'Reusable Markdown snippets with expansion triggers and dynamic placeholders.',
+  olingo: 'A command-line tool for refinement, translation, and language analysis.',
+  watchdiff: 'A Rust TUI for watching, analysing, and reviewing AI-assisted code changes.',
+}
+
+export const landingPages: Record<string, string> = {
+  'vibewaiting-site': 'https://vibewait.ing/',
+  easplit: 'https://xicv.github.io/easplit/',
+  minco: 'https://xicv.github.io/minco/',
+  'recogniz.ing': 'https://recogniz.ing/',
+}
