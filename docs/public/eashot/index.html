@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="eaShot captures a known part of your Mac display and puts it straight on the clipboard.">
+    <meta name="theme-color" content="#090b16">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>eaShot — Capture the part you already know</title>
+    <link rel="canonical" href="https://xicv.github.io/eashot/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="eaShot — Capture the part you already know">
+    <meta property="og:description" content="Capture a known region of your Mac display, then paste. No editor, upload, or account.">
+    <meta property="og:url" content="https://xicv.github.io/eashot/">
+    <link rel="icon" href="assets/eashot-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="eaShot home">
+        <img src="assets/eashot-icon.png" alt="" width="38" height="38">
+        <span>eaShot</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="install.html">Install</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Capture the part<br>you already know.</h1>
+          <p class="hero-lead">Right half. Left third. Full display. One shortcut puts exactly that region on your clipboard—ready to paste.</p>
+          <div class="hero-actions" id="beta">
+            <a class="button button-primary" href="downloads/eaShot-0.1.0-beta.1.dmg">Download free beta</a>
+            <a class="button button-secondary" href="install.html">See installation</a>
+          </div>
+          <p class="microcopy">Free beta · macOS 15+ · signed and Apple-notarized · no account</p>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="eaShot right-half capture preview">
+          <div class="display-frame">
+            <div class="display-toolbar"><i></i><i></i><i></i><span>Project notes</span></div>
+            <div class="display-content">
+              <div class="ghost-lines" aria-hidden="true">
+                <b></b><b></b><b></b><b></b><b></b><b></b>
+              </div>
+              <div class="capture-region right active" data-capture-region>
+                <span class="corner corner-one"></span><span class="corner corner-two"></span>
+                <span class="corner corner-three"></span><span class="corner corner-four"></span>
+                <div><strong data-region-label>Right 50%</strong><small>ready for clipboard</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="success-pill"><span>✓</span> Right 50% copied</div>
+        </div>
+      </section>
+
+      <section class="region-lab" aria-label="Try a capture region">
+        <div class="region-controls" role="group" aria-label="Preview a capture region">
+          <button type="button" data-region="left">Left</button>
+          <button type="button" class="selected" data-region="right">Right</button>
+          <button type="button" data-region="top">Top</button>
+          <button type="button" data-region="bottom">Bottom</button>
+          <button type="button" data-region="full">Full</button>
+          <label>Size
+            <select data-ratio>
+              <option>25%</option><option>⅓</option><option>40%</option>
+              <option selected>50%</option><option>60%</option><option>⅔</option><option>75%</option>
+            </select>
+          </label>
+        </div>
+        <p class="region-note">Pick the part you need. Your last successful region is ready next time.</p>
+      </section>
+
+      <section class="steps" id="how" aria-labelledby="how-heading">
+        <div class="section-heading">
+          <h2 id="how-heading">How it works</h2>
+        </div>
+        <div class="step-grid">
+          <article><span>01</span><h3>Pick a region</h3><p>Choose an anchored edge and the percentage you need right now.</p></article>
+          <article><span>02</span><h3>Press your shortcut</h3><p>eaShot captures the display under your pointer without opening an editor.</p></article>
+          <article><span>03</span><h3>Paste</h3><p>The PNG is already on your clipboard. Saving to a chosen folder is optional.</p></article>
+        </div>
+      </section>
+
+      <section class="product-shot" aria-labelledby="picker-heading">
+        <div class="shot-copy">
+          <h2 id="picker-heading">Quick when you need it.</h2>
+          <p>Open eaShot from your menu bar for the occasional alternative. Global shortcuts start unset, confirmations can be hidden, and nothing watches your screen in the background.</p>
+          <ul>
+            <li>Full, four edges, seven proportions</li>
+            <li>Display under pointer</li>
+            <li>Clipboard, folder, or both</li>
+          </ul>
+        </div>
+        <div class="shot-frame">
+          <img src="assets/eashot-picker-beta1.png" alt="eaShot picker with Quick Capture and five region choices" loading="lazy">
+        </div>
+      </section>
+
+      <section class="learning" aria-labelledby="learning-heading">
+        <div class="learning-card">
+          <div class="spark">✦</div>
+          <div>
+            <h2 id="learning-heading">Your last region, ready again.</h2>
+            <p>eaShot follows your last successful menu choice by default. Prefer one fixed preset? Pin Quick Capture and keep frequent-region suggestions quiet and local.</p>
+          </div>
+          <div class="suggestion-demo"><small>Remember last selection</small><strong>Right 50%</strong><span>Ready for Quick Capture</span></div>
+        </div>
+      </section>
+
+      <section class="privacy" id="privacy" aria-labelledby="privacy-heading">
+        <div>
+          <h2 id="privacy-heading">Private by design.</h2>
+        </div>
+        <div class="privacy-grid">
+          <article><span>⌁</span><h3>No uploads</h3><p>Captures go only to your clipboard and the folder you explicitly choose.</p></article>
+          <article><span>◌</span><h3>No account</h3><p>No login, analytics profile, cloud library, or background screen stream.</p></article>
+          <article><span>◇</span><h3>Tiny local history</h3><p>Suggestions store region, ratio, source, and time—never pixels or app names.</p></article>
+        </div>
+        <a class="text-link" href="privacy.html">Read the full privacy boundary →</a>
+      </section>
+
+      <section class="final-cta">
+        <img src="assets/eashot-icon.png" alt="" width="86" height="86">
+        <h2>Ready when you are.</h2>
+        <p>Try the free beta for macOS 15 or later.</p>
+        <a class="button button-primary" href="downloads/eaShot-0.1.0-beta.1.dmg">Download eaShot beta 1</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="index.html"><img src="assets/eashot-icon.png" alt="" width="30" height="30"><span>eaShot</span></a>
+      <p>Made for focused work on macOS.</p>
+      <nav aria-label="Footer navigation"><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="terms.html">Terms</a></nav>
+    </footer>
+  </body>
+</html>
