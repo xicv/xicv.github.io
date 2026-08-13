@@ -1,4 +1,5 @@
 export const excludedRepositories = new Set([
+  'xicv.github.io',
   'nvim-config',
   'homebrew-tap',
   'alfred-workflows',
