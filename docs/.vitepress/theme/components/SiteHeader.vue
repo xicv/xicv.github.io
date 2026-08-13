@@ -38,6 +38,12 @@ function closeMobileMenu(): void {
         >Projects</a>
         <a
           class="nav-link"
+          :class="{ 'nav-link--active': isActive('/contact') }"
+          href="/contact"
+          :aria-current="isActive('/contact') ? 'page' : undefined"
+        >Contact</a>
+        <a
+          class="nav-link"
           href="https://github.com/xicv"
           target="_blank"
           rel="noreferrer"
@@ -62,6 +68,13 @@ function closeMobileMenu(): void {
             :aria-current="isActive('/projects') ? 'page' : undefined"
             @click="closeMobileMenu"
           >Projects</a>
+          <a
+            class="mobile-nav__link"
+            :class="{ 'mobile-nav__link--active': isActive('/contact') }"
+            href="/contact"
+            :aria-current="isActive('/contact') ? 'page' : undefined"
+            @click="closeMobileMenu"
+          >Contact</a>
           <a
             class="mobile-nav__link"
             href="https://github.com/xicv"

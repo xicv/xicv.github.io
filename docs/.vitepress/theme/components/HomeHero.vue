@@ -1,9 +1,3 @@
-<script setup lang="ts">
-defineProps<{
-  projectCount: number
-}>()
-</script>
-
 <template>
   <section class="home-hero" aria-labelledby="home-title">
     <h1 id="home-title" class="home-hero__title">
@@ -12,7 +6,7 @@ defineProps<{
       programmer<span class="home-hero__period">.</span>
     </h1>
     <a class="home-hero__link" href="/projects">
-      {{ projectCount }} active projects →
+      View projects →
     </a>
     <div class="home-hero__rule" aria-hidden="true"></div>
   </section>
