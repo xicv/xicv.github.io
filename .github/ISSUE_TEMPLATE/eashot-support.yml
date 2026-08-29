@@ -1,0 +1,83 @@
+name: eaShot support request
+description: Report a problem or tell us what would make eaShot more useful.
+title: "[eaShot] "
+assignees:
+  - xicv
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for getting in touch. This submission creates a public GitHub issue.
+        Do not include captured images, private documents, email addresses, license keys, sensitive app names, or personal information.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What are you reporting?
+      options:
+        - Capture region or screen geometry
+        - Screen Recording permission or setup
+        - Clipboard or folder output
+        - Remembered region, pinned capture, or suggestion
+        - Shortcut or launch at login
+        - Installation or App Store purchase
+        - User interface or accessibility
+        - General feedback
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: eaShot version and build
+      description: From the app menu choose About eaShot, for example 1.0.0 (7).
+      placeholder: "1.0.0 (7)"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "macOS 26.5.2"
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Mac model and chip
+      description: A general model is enough; do not include a serial number.
+      placeholder: "MacBook Pro 16-inch, Intel"
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what actually happened. The exact visible error text helps a lot.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The problem still happens after quitting and reopening eaShot
+        - label: eaShot has Screen Recording permission in System Settings
+        - label: I have not included sensitive or unredacted content
+    validations:
+      required: true
