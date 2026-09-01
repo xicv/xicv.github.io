@@ -54,6 +54,8 @@ a:focus-visible, button:focus-visible, select:focus-visible, summary:focus-visib
 .glass-nav { display: flex; gap: 4px; padding: 4px; border-radius: 999px; }
 .glass-nav a { padding: 8px 15px; border-radius: 999px; color: var(--muted); font-size: 13.5px; font-weight: 550; transition: color .18s ease, background .18s ease; }
 .glass-nav a:hover { color: var(--text); background: var(--panel-2); }
+.lang-switch { font-weight: 650; color: var(--blue); }
+.site-header nav:not(.glass-nav) .lang-switch { color: var(--blue); }
 .button { min-height: 44px; padding: 0 19px; border: 1px solid var(--line); border-radius: var(--radius-control); display: inline-flex; align-items: center; justify-content: center; font-weight: 620; font-size: 14px; transition: transform .15s ease, box-shadow .15s ease, background .15s ease; }
 .button:hover { transform: translateY(-1px); }
 .button-small { min-height: 36px; padding-inline: 15px; font-size: 13px; }

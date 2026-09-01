@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN" data-page="index" data-alt="../index.html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="eaShot 已上架 Mac App Store。把指针放到显示器上,一快捷键捕捉同一固定区域——右侧一半、左侧三分之一、顶部 40%,直入剪贴板。单次购买 US$4.99。">
+    <meta name="theme-color" content="#080a13">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>eaShot — 一快捷键,截取同一区域</title>
+    <link rel="canonical" href="https://xicv.github.io/eashot/zh/">
+    <link rel="alternate" hreflang="en" href="https://xicv.github.io/eashot/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://xicv.github.io/eashot/zh/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="eaShot — 一快捷键,截取同一区域">
+    <meta property="og:description" content="右侧一半、左侧三分之一、顶部 40%。直接捕捉固定区域到剪贴板,无需拖拽选框。现已上架 Mac App Store。">
+    <meta property="og:url" content="https://xicv.github.io/eashot/zh/">
+    <link rel="icon" href="../assets/eashot-icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+  </head>
+  <body data-page="index">
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="nav-wrap">
+      <div class="site-header">
+        <a class="brand" href="index.html" aria-label="eaShot 首页">
+          <img src="../assets/eashot-icon.png" alt="" width="30" height="30">
+          <span>eaShot</span>
+        </a>
+        <nav class="glass-nav" aria-label="主导航">
+          <a href="#features">功能</a>
+          <a href="#compare">对比</a>
+          <a href="#faq">常见问题</a>
+          <a href="privacy.html">隐私</a>
+          <a href="support.html">支持</a>
+        </nav>
+        <a class="button button-small button-primary nav-cta" href="https://apps.apple.com/us/app/eashot/id6801031793" rel="noopener">获取应用</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <aside class="launch-status" aria-label="上架状态">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span><strong>现已上架 Mac App Store</strong><small>版本 1.1 · 单次购买 US$4.99</small></span>
+          </aside>
+          <h1>捕捉同一区域。<br>一快捷键。</h1>
+          <p class="hero-lead">右侧一半、左侧三分之一、顶部 40%。把指针放到目标显示器上,eaShot 直接捕捉该固定区域到剪贴板——无需拖拽选框。</p>
+          <p class="hero-sub">为错误报告、视觉检查、仪表盘和你每天重复的文档而生。</p>
+          <div class="hero-actions">
+            <a class="store-badge" href="https://apps.apple.com/us/app/eashot/id6801031793" rel="noopener" aria-label="在 Mac App Store 下载 eaShot">
+              <img src="../assets/macappstore-badge.svg" alt="在 Mac App Store 下载" width="156" height="40">
+            </a>
+            <a class="button button-secondary" href="#how">了解使用方法</a>
+          </div>
+          <p class="microcopy">需要 macOS 15 或更高版本 · 支持 Apple 芯片与 Intel 芯片 · 无订阅</p>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="eaShot 右半屏捕捉预览">
+          <div class="display-frame">
+            <div class="display-toolbar"><i></i><i></i><i></i><span>项目笔记</span></div>
+            <div class="display-content">
+              <div class="ghost-lines" aria-hidden="true">
+                <b></b><b></b><b></b><b></b><b></b><b></b>
+              </div>
+              <div class="capture-region right active" data-capture-region>
+                <span class="corner corner-one"></span><span class="corner corner-two"></span>
+                <span class="corner corner-three"></span><span class="corner corner-four"></span>
+                <div><strong data-region-label>右侧 50%</strong><small>已就绪,等待复制</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="success-pill"><span>✓</span> 已复制右侧 50%</div>
+        </div>
+      </section>
+
+      <section class="region-lab" aria-label="试一试捕捉区域">
+        <div class="region-controls" role="group" aria-label="预览捕捉区域">
+          <button type="button" data-region="left">左侧</button>
+          <button type="button" class="selected" data-region="right">右侧</button>
+          <button type="button" data-region="top">顶部</button>
+          <button type="button" data-region="bottom">底部</button>
+          <button type="button" data-region="full">全屏</button>
+          <label>比例
+            <select data-ratio>
+              <option>25%</option><option>⅓</option><option>40%</option>
+              <option selected>50%</option><option>60%</option><option>⅔</option><option>75%</option>
+            </select>
+          </label>
+        </div>
+        <p class="region-note">选择你需要的部分。下次会自动记住你上次成功的区域。</p>
+      </section>
+
+      <section class="features" id="features" aria-labelledby="features-heading">
+        <div class="section-heading">
+          <p class="eyebrow">全部功能</p>
+          <h2 id="features-heading">只做一件事,做好它。</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="glass-card">
+            <span class="feature-glyph" aria-hidden="true">◧</span>
+            <h3>锚定区域</h3>
+            <p>全屏、四条边、七种比例——25% 到 75%。区域始终锚定在你选择的边上,每一次都分毫不差。</p>
+          </article>
+          <article class="glass-card">
+            <span class="feature-glyph" aria-hidden="true">⌖</span>
+            <h3>指针所在显示器</h3>
+            <p>把指针移到目标显示器,按下快捷键,捕捉的正是那块屏幕。多显示器环境轻松应对。</p>
+          </article>
+          <article class="glass-card">
+            <span class="feature-glyph" aria-hidden="true">⚡</span>
+            <h3>一键快速捕捉</h3>
+            <p>固定你最常用的区域,从菜单栏或全局快捷键直接触发。不用打开选择器,不用拖拽,不用裁剪。</p>
+          </article>
+          <article class="glass-card">
+            <span class="feature-glyph" aria-hidden="true">⧉</span>
+            <h3>剪贴板、文件夹,或两者</h3>
+            <p>直接粘贴到工单或文档,或保存到你指定过的文件夹,一次操作同时完成。</p>
+          </article>
+          <article class="glass-card">
+            <span class="feature-glyph" aria-hidden="true">✦</span>
+            <h3>记住你的上次区域</h3>
+            <p>默认跟随你上次成功的菜单选择。喜欢固定预设?固定快速捕捉,本地的常用区域建议也会保持安静。</p>
+          </article>
+          <article class="glass-card">
+            <span class="feature-glyph" aria-hidden="true">🔒</span>
+            <h3>隐私优先设计</h3>
+            <p>无账户、无分析、无云端、无后台屏幕监视。只有你触发捕捉时才会读取屏幕像素。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="steps" id="how" aria-labelledby="how-heading">
+        <div class="section-heading">
+          <h2 id="how-heading">使用方法</h2>
+        </div>
+        <div class="step-grid">
+          <article><span>01</span><h3>选择区域</h3><p>选一条锚定边和当下需要的比例。</p></article>
+          <article><span>02</span><h3>按下快捷键</h3><p>eaShot 捕捉指针所在的显示器,全程不打开编辑器。</p></article>
+          <article><span>03</span><h3>粘贴</h3><p>PNG 已经在剪贴板里。保存到指定文件夹是可选项。</p></article>
+        </div>
+      </section>
+
+      <section class="product-shot" aria-labelledby="picker-heading">
+        <div class="shot-copy">
+          <h2 id="picker-heading">偶尔换个区域?也没问题。</h2>
+          <p>从菜单栏打开 eaShot 即可临时切换。全局快捷键默认不设置,成功提示可以隐藏,后台也不会监视你的屏幕。</p>
+          <ul>
+            <li>全屏、四条边、七种比例</li>
+            <li>命名预设槽位,每个可绑定快捷键</li>
+            <li>文件名模板与按月文件夹</li>
+            <li>指针所在显示器</li>
+            <li>剪贴板、文件夹,或两者</li>
+            <li>原生的菜单栏应用——不占用程序坞</li>
+          </ul>
+        </div>
+        <div class="shot-frame">
+          <img src="../assets/eashot-picker-current.png" alt="eaShot 选择器:左右区域在上,下底部在下,中间是较小的全屏选择">
+        </div>
+      </section>
+
+      <section class="compare" id="compare" aria-labelledby="compare-heading">
+        <div class="section-heading">
+          <p class="eyebrow">诚心对比</p>
+          <h2 id="compare-heading">你需要的是套件,还是一个快捷键?</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col">能力</th><th scope="col">eaShot · US$4.99</th><th scope="col">截屏套件 · 约 $29 起</th><th scope="col">macOS 自带</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">可重复的锚定区域</th><td class="yes">✓ 核心功能</td><td>每次都要重新拖选</td><td class="no">—</td></tr>
+              <tr><th scope="row">单快捷键捕捉</th><td class="yes">✓</td><td class="yes">✓</td><td>部分支持</td></tr>
+              <tr><th scope="row">指针所在显示器</th><td class="yes">✓</td><td class="yes">✓</td><td class="no">—</td></tr>
+              <tr><th scope="row">无订阅</th><td class="yes">✓ 单次购买</td><td class="no">常见订阅制</td><td class="yes">✓</td></tr>
+              <tr><th scope="row">标注、OCR、录屏</th><td class="no">— 有意不做</td><td class="yes">✓</td><td>部分支持</td></tr>
+              <tr><th scope="row">云端上传</th><td class="no">— 有意不做</td><td class="yes">✓</td><td class="no">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="region-note">套件在你需要"什么都有"时非常出色。eaShot 属于每天重复截图的人——一次按键,截图已在剪贴板。</p>
+      </section>
+
+      <section class="faq" id="faq" aria-labelledby="faq-heading">
+        <div class="section-heading">
+          <h2 id="faq-heading">常见问题</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>支持哪些 macOS 版本?</summary>
+            <p>macOS 15 或更高版本,支持 Apple 芯片和 Intel 芯片。eaShot 是通用二进制应用并已启用沙盒。</p>
+          </details>
+          <details>
+            <summary>为什么 eaShot 需要屏幕录制权限?</summary>
+            <p>macOS 要求所有读取屏幕像素的应用获取这一次性的权限。在应用请求时批准即可(系统设置 → 隐私与安全性 → 屏幕录制)。你随时可以撤销授权。</p>
+          </details>
+          <details>
+            <summary>eaShot 会上传我的截图吗?</summary>
+            <p>不会。捕捉只会进入剪贴板,以及你明确指定的文件夹。没有账户、没有分析、没有云服务。用于建议的历史记录只存储区域、比例、来源和时间——从不存储像素或应用名称。</p>
+          </details>
+          <details>
+            <summary>它和 CleanShot X 或 Shottr 有什么不同?</summary>
+            <p>它们是优秀的截屏套件,带编辑器、OCR 和录屏。eaShot 只做一件事:把重复的锚定区域变成一次按键,价格只是一杯咖啡的一半。很多人两者都用——日常重复交给 eaShot,需要标注时再用套件。</p>
+          </details>
+          <details>
+            <summary>有免费试用吗?</summary>
+            <p>Mac App Store 的付费应用不提供试用。但单次 US$4.99 买断的好处是:它永远是你的——没有需要记得取消的订阅。</p>
+          </details>
+          <details>
+            <summary>可以自定义快捷键吗?</summary>
+            <p>可以。快速捕捉和打开选择器都支持在 设置 → 快捷键 中录制自定义全局快捷键。默认不设置,eaShot 绝不会占用 macOS 已有的快捷键。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="learning" aria-labelledby="learning-heading">
+        <div class="learning-card">
+          <div class="spark">✦</div>
+          <div>
+            <h2 id="learning-heading">你的上一个区域,随时就绪。</h2>
+            <p>eaShot 默认跟随你上次成功的菜单选择。更喜欢固定预设?固定快速捕捉,本地的常用区域建议也会保持安静。</p>
+          </div>
+          <div class="suggestion-demo"><small>记住上次选择</small><strong>右侧 50%</strong><span>已就绪,等待快速捕捉</span></div>
+        </div>
+      </section>
+
+      <section class="privacy" id="privacy" aria-labelledby="privacy-heading">
+        <div>
+          <h2 id="privacy-heading">隐私优先设计。</h2>
+        </div>
+        <div class="privacy-grid">
+          <article><span>⌁</span><h3>绝不上传</h3><p>捕捉只进入你的剪贴板和你明确选择的文件夹。</p></article>
+          <article><span>◌</span><h3>无账户</h3><p>没有登录、分析档案、云端资料库,也没有后台屏幕流。</p></article>
+          <article><span>◇</span><h3>极小的本地历史</h3><p>建议只存储区域、比例、来源和时间——从不存储像素或应用名称。</p></article>
+        </div>
+        <a class="text-link" href="privacy.html">阅读完整的隐私边界 →</a>
+      </section>
+
+      <section class="store-launch" id="app-store" aria-labelledby="store-heading">
+        <div class="store-copy">
+          <p class="eyebrow">Mac App Store · 版本 1.1</p>
+          <h2 id="store-heading">一款小工具。<br>一次简单付费。</h2>
+          <p>US$4.99 一次,永久属于你——没有订阅、账户、广告或云服务。你的商店会按当地货币自动定价。</p>
+        </div>
+        <div class="price-card" aria-label="单次购买,US$4.99">
+          <small>Mac App Store</small>
+          <strong><sup>US$</sup>4.99</strong>
+          <span>单次购买</span>
+          <em>无订阅 · 免费更新</em>
+          <a class="button button-primary price-button" href="https://apps.apple.com/us/app/eashot/id6801031793" rel="noopener">获取 eaShot</a>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p class="eyebrow">现已上架</p>
+        <h2>一款专注的小工具。一次买断。</h2>
+        <p>别再拖同一个选框了。把常用的捕捉放到快捷键上,继续做正事。</p>
+        <div class="hero-actions">
+          <a class="store-badge" href="https://apps.apple.com/us/app/eashot/id6801031793" rel="noopener" aria-label="在 Mac App Store 下载 eaShot">
+            <img src="../assets/macappstore-badge.svg" alt="在 Mac App Store 下载" width="156" height="40">
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="index.html"><img src="../assets/eashot-icon.png" alt="" width="30" height="30"><span>eaShot</span></a>
+      <p>为 macOS 上的专注工作而生。</p>
+      <nav aria-label="页脚导航"><a href="privacy.html">隐私</a><a href="support.html">支持</a><a href="terms.html">条款</a><a href="https://apps.apple.com/us/app/eashot/id6801031793" rel="noopener">Mac App Store</a></nav>
+    </footer>
+  </body>
+</html>
